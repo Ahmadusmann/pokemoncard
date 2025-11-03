@@ -1,0 +1,163 @@
+/* ========================================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================================= */
+
+/* Mobile Devices: 320px - 768px */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    padding: 0 1.6rem;
+  }
+
+  .pokemon-card {
+    width: 100%;
+    max-width: 32rem;
+    min-height: 38rem;
+    margin: 0 auto;
+  }
+
+  .pokemon-name {
+    font-size: 2.4rem;
+  }
+
+  .grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    max-width: 28rem;
+  }
+}
+
+/* Tablets: 768px - 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .pokemon-card {
+    width: 30rem;
+    min-height: 40rem;
+  }
+
+  .pokemon-name {
+    font-size: 2.8rem;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+/* Laptops: 1024px - 1440px */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  html {
+    font-size: 58%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8rem;
+  }
+
+  .pokemon-card {
+    width: 32rem;
+    min-height: 40rem;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+}
+
+/* LCD/Computer Screens: 1440px - 1920px */
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+  }
+
+  .pokemon-card {
+    width: 34rem;
+    min-height: 42rem;
+  }
+}
+
+/* Large Screens: 1920px and above */
+@media screen and (min-width: 1921px) {
+  html {
+    font-size: 75%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3.6rem;
+  }
+
+  .pokemon-card {
+    width: 36rem;
+    min-height: 44rem;
+  }
+
+  .container {
+    max-width: 180rem;
+  }
+}
+
+/* Small Mobile Devices: 320px and below */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+
+  .pokemon-card {
+    width: 100%;
+    max-width: 28rem;
+    min-height: 35rem;
+  }
+
+  .pokemon-name {
+    font-size: 2rem;
+  }
+
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
+
+/* Landscape Orientation */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pokemon-card {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
